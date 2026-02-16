@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIND HOUSE | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" class="img1">
+            <h3>GRIND HOUSE FITNESS</h3>
+        </div>
+        <div class="navlink">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="dashboard.html">Inventory</a></li>
+                <li><a href="salesp.html">Sales</a></li>
+                <li><a href="suppliersp.html">Suppliers</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="whole">
+        <!--Sidebar-->
+        <aside class="sidebar31">
+            <div class="silogo">
+                <img src="logo.png">
+                <h3>GRIND HOUSE FITNESS</h3>
+            </div>
+            <div class="sinav-links">
+                <li><a class="active" href="dashboard.html">Dashboard</a></li>
+                <li><a href="pro-supplements.html">Supplement</a></li>
+                <li><a href="pro-equipments.html">Equipment</a></li>
+            </div>
+        </aside>
+        <div class="dashboard">
+            <div class="main">
+                <div class="header">
+                    <h1><i class="ri-home-3-fill"></i> Dashboard</h1>
+                </div>
+                <!-- Summary Cards -->
+                <div class="cards">
+                    <div class="card31">
+                        <h3>Account balance</h3>
+                        <p>GH₵ 96000</p>
+                    </div>
+                    <div class="card31">
+                        <h3>Available</h3>
+                        <p>102</p>
+                    </div>
+                    <div class="card31">
+                        <h3>Low Stock</h3>
+                        <p>18</p>
+                    </div>
+                    <div class="card31">
+                        <h3>Out of Service</h3>
+                        <p>8</p>
+                    </div>
+                </div>
+                <!-- Equipment Table -->
+                <div class="table-container">
+                    <h2 style="margin-bottom:15px;">Equipment List</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Equipment</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Treadmill</td>
+                                <td>Cardio</td>
+                                <td>10</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Dumbbells (20kg)</td>
+                                <td>Strength</td>
+                                <td>4</td>
+                                <td><span class="status low">Low Stock</span></td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Bench Press</td>
+                                <td>Strength</td>
+                                <td>0</td>
+                                <td><span class="status out">Out of Service</span></td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Exercise Bike</td>
+                                <td>Cardio</td>
+                                <td>6</td>
+                                <td><span class="status available">Available</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <div class="tab1">
+                        <table class="layout-table">
+                            <tr>
+                                <td width="50%" class="tD2"> 
+                                    <div>
+                                        <h3>Received Stockings</h3>
+                                        <table class="layout-table">
+                                            <tr>
+                                                <td>Protein Bar</td>
+                                                <td>+ 50 units</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lucozade</td>
+                                                <td>+30 units</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Monster Energy Drink</td>
+                                                <td>+50 Units</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td width="50%" class="tD2">
+                                    <div>
+                                        <h3>Fast Selling Units This Month</h3>
+                                        <table class="layout-table">
+                                            <tr>
+                                                <td>Monster Enery Drink</td>
+                                                <td>100 units sold</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Towel(Cotton)</td>
+                                                <td>87 units sold</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                    </div>
+                <!-- Add Equipment Form -->
+                <div class="form-container">
+                    <h2>Add New Equipment</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Equipment Name</label>
+                            <input type="text" placeholder="Enter equipment name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select required>
+                                <option value="">Select Category</option>
+                                <option>Cardio</option>
+                                <option>Strength</option>
+                                <option>Flexibility</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" placeholder="Enter quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select required>
+                                <option value="">Select Status</option>
+                                <option>Available</option>
+                                <option>Low Stock</option>
+                                <option>Out of Service</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Add Equipment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="card4">
+                <span class="com">Company</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Suppliers</a></li>
+            </div>
+            <div class="card4">
+                <span class="com">Categories</span>
+                <li>Basic Yoga</li>
+                <li>strengh training</li>
+                <li>Body building</li>
+                <li>Weight lost</li>
+            </div>
+            <div class="card4">
+                <span class="com">Contact Us</span>
+                <li>(+233) 500 900-419</li>
+                <li>Group26@outlook.com</li><br>
+                <li>@UCC campus</li>
+            </div>
+            <div class="card5">
+                <span class="com">Subscribe Our<br>Newsletter</span>
+                <input type="search" placeholder="Enter your email">
+                <p>Never miss an update & News to your email.</p>
+            </div>
+        </div>
+        <div class="foot-nav">
+            <div class="fot-logo">
+                <img src="logo.png">
+                <h3>GRIND HOUSE</h3>
+            </div>
+            <div class="copy-right">
+                <p>&copy; 2026 BSc IT Group 26. All rights reserved.</p>
+            </div>
+            <div class="social-links">
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-x-fill"></i>
+                <i class="ri-linkedin-box-fill"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
