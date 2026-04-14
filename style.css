@@ -345,7 +345,7 @@ nav a{
     cursor: pointer;
 }
 .rollover:hover{
-    content: url(Img/rollover.png);
+    content: url(rollover.png);
     cursor: pointer;
 }
 /*Payment*/
